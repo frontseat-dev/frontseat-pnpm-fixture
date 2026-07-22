@@ -1,12 +1,12 @@
 apiVersion: frontseat.io/v1alpha1
 kind: Workspace
 metadata:
-  name: frontseat-pnpm-example
+  name: frontseat-pnpm-fixture
 spec:
   version: latest
   repositories:
-    - name: frontseat-pnpm-example
-      url: https://github.com/frontseat-dev/frontseat-pnpm-example.git
+    - name: frontseat-pnpm-fixture
+      url: https://github.com/frontseat-dev/frontseat-pnpm-fixture.git
       path: .
       layout: monorepo
   plugins:
