@@ -1,0 +1,15 @@
+apiVersion: frontseat.io/v1alpha1
+kind: Workspace
+metadata:
+  name: frontseat-pnpm-example
+spec:
+  version: latest
+  repositories:
+    - name: frontseat-pnpm-example
+      url: https://github.com/frontseat-dev/frontseat-pnpm-example.git
+      path: .
+      layout: monorepo
+  plugins:
+    frontseat/backstage: {}
+    frontseat/mise: {}
+    frontseat/pnpm: {}

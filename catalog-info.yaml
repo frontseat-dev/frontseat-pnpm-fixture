@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: frontseat-pnpm-example
+  description: Node.js app using a pnpm lockfile — used to validate Frontseat's pnpm plugin.
+spec:
+  owner: maintainers
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: pnpm-app
+  description: Node.js app using a pnpm lockfile.
+spec:
+  type: service
+  lifecycle: production
+  owner: maintainers
+  system: frontseat-pnpm-example
